@@ -9,7 +9,7 @@
   <body>
     <h1>Formulario de Seguros</h1>
 
-    <form method="post">
+    <form id="formularioSeguro" method="post">
       <ul>
         <li>
           <label for="name">Name:</label>
@@ -33,14 +33,14 @@
         </li>
         <li>
           <label for="dni">DNI:</label>
-          <input type="text" id="dni" dni="dni" required placeholder="DNI" />
+          <input type="text" id="dni" name="dni" required placeholder="DNI" />
         </li>
         <li>
           <label for="email">Email:</label>
           <input
             type="email"
             id="email"
-            email="email"
+            name="email"
             required
             placeholder="Email"
           />
@@ -57,8 +57,20 @@
         </li>
         <li>
           <label for="tipodeseguro">Tipo de seguro:</label>
+          <select id="tipodeseguro" name="tipodeseguro" required>
+            <option value="basico" data-precio="500">Básico</option>
+            <option value="intermedio" data-precio="1000">Intermedio</option>
+            <option value="premium" data-precio="1500">Premium</option>
+          </select>
         </li>
+        <div>
+          <p id="precioSeguro">Precio del seguro</p>
+        </div>
+        <div>
+          <button type="submit" value="Enviar">Enviar</button>
+        </div>
       </ul>
     </form>
+    <script src="scripts.js"></script>
   </body>
 </html>
