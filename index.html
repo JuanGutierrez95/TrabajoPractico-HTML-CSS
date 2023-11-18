@@ -9,25 +9,54 @@
   <body>
     <h1>Formulario de Seguros</h1>
 
-    <form>
+    <form method="post">
       <ul>
         <li>
-          <label>Nombre:</label>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Name"
+          />
         </li>
         <li>
-          <label>Apellido:</label>
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            id="apellido"
+            apellido="apellido"
+            required
+            placeholder="Apellido"
+          />
         </li>
         <li>
-          <label>DNI:</label>
+          <label for="dni">DNI:</label>
+          <input type="text" id="dni" dni="dni" required placeholder="DNI" />
         </li>
         <li>
-          <label>Email:</label>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            email="email"
+            required
+            placeholder="Email"
+          />
         </li>
         <li>
-          <label>Teléfono:</label>
+          <label for="telefono">Teléfono:</label>
+          <input
+            type="tel"
+            id="telefono"
+            telefono="telefono"
+            required
+            placeholder="Telefono"
+          />
         </li>
         <li>
-          <label>Tipo de seguro:</label>
+          <label for="tipodeseguro">Tipo de seguro:</label>
         </li>
       </ul>
     </form>
