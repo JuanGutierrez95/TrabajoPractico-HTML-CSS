@@ -10,66 +10,58 @@
     <h1>Formulario de Seguros</h1>
 
     <form id="formularioSeguro" method="post">
-      <ul>
-        <li>
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            placeholder="Name"
-          />
-        </li>
-        <li>
-          <label for="apellido">Apellido:</label>
-          <input
-            type="text"
-            id="apellido"
-            apellido="apellido"
-            required
-            placeholder="Apellido"
-          />
-        </li>
-        <li>
-          <label for="dni">DNI:</label>
-          <input type="text" id="dni" name="dni" required placeholder="DNI" />
-        </li>
-        <li>
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="Email"
-          />
-        </li>
-        <li>
-          <label for="telefono">Teléfono:</label>
-          <input
-            type="tel"
-            id="telefono"
-            telefono="telefono"
-            required
-            placeholder="Telefono"
-          />
-        </li>
-        <li>
-          <label for="tipodeseguro">Tipo de seguro:</label>
-          <select id="tipodeseguro" name="tipodeseguro" required>
-            <option value="basico" data-precio="500">Básico</option>
-            <option value="intermedio" data-precio="1000">Intermedio</option>
-            <option value="premium" data-precio="1500">Premium</option>
-          </select>
-        </li>
-        <div>
-          <p id="precioSeguro">Precio del seguro</p>
-        </div>
-        <div>
-          <button type="submit" value="Enviar">Enviar</button>
-        </div>
-      </ul>
+      <div class="formulario">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Name" />
+      </div>
+      <div class="formulario">
+        <label for="apellido">Apellido:</label>
+        <input
+          type="text"
+          id="apellido"
+          apellido="apellido"
+          required
+          placeholder="Apellido"
+        />
+      </div>
+      <div class="formulario">
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required placeholder="DNI" />
+      </div>
+      <div class="formulario">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Email"
+        />
+      </div>
+      <div class="formulario">
+        <label for="telefono">Teléfono:</label>
+        <input
+          type="tel"
+          id="telefono"
+          telefono="telefono"
+          required
+          placeholder="Telefono"
+        />
+      </div>
+      <div class="formulario">
+        <label for="tipodeseguro">Tipo de seguro:</label>
+        <select id="tipodeseguro" name="tipodeseguro" required>
+          <option value="basico" data-precio="500">Básico</option>
+          <option value="intermedio" data-precio="1000">Intermedio</option>
+          <option value="premium" data-precio="1500">Premium</option>
+        </select>
+      </div>
+      <div class="formulario">
+        <p id="precioSeguro">Precio del seguro</p>
+      </div>
+      <div class="boton">
+        <button type="submit" value="Enviar">Enviar</button>
+      </div>
     </form>
     <script src="scripts.js"></script>
   </body>
